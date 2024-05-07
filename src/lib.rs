@@ -1,5 +1,5 @@
 mod arch;
-use arch::UserRegs;
+pub use arch::UserRegs;
 
 use libc::{pid_t, ptrace, PTRACE_ATTACH, PTRACE_CONT, PTRACE_DETACH};
 use std::{mem, process::Child};
